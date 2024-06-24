@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shawn's Blog</title>
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+    <div class="content">
 
+        <div class="navbar">
+            <ul>
+            <li> <a href="/">Home</a> </li>
+            <li> <a href="/about">About</a> </li>
+            <li> <a href="/contact">Contact</a> </li>
+            </ul>
+        </div>
+        <div class="post-section"> 
+            <h2> <u>Shawn has some thoughts he would like to share: </u></h2>
+            <% if (locals.posts) { %>
+                    <% posts.forEach((post) => { %>
+                        <h4><%= post.title %></h4>
+                        <p><%= post.content %></p>
+                        <div>
+                            <button>
+                                <a href="/posts/edit/<%= post.id%>">Edit post</a>
+                            </button>
+                            <form action="/posts/delete/<%= post.id %>" method="POST" style="display:inline;">
+                                <button type="submit">Delete</button>
+                            </form>
+                        </div>
+                        <hr class="solid">              
+                    <%}); %>
+                    </ol>
+            <%} %>
+            <button>    
+                <a href="/new"> + Create a new Post</a>
+            </button>
+        </div>
+        
+    </div> 
+    <%- include("partials/footer.ejs") %> 
+</body>
+</html>
