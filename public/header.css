@@ -11,7 +11,6 @@ body {
 .container {
     display: flex;
     background-color: #ff7f3e;
-    gap: 50px;
     height: 50px;
     justify-content: flex-start;
     border-color: black;
@@ -55,6 +54,10 @@ a {
     width: 100%;
 }
 
+.post-section p, h2{
+    padding-right: 20px;
+}
+
 .box {
     background-color: #80c4e9;
     display : flex;
@@ -93,4 +96,12 @@ ol{
       */
     } 
 
+@media (max-width:400px){
+    .content {
+        flex-direction: column;
+    }
+    .navbar {
+        width: 100%;
+    }
+}   
 
