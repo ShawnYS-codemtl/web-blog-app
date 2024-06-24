@@ -23,3 +23,8 @@ Setup:
 5. node index.js to run the app
 6. in browser, the app will appear at localhost:3000
 7. ctrl + c in terminal to stop the server
+
+Learnings
+1. HTTP Requests GET and POST
+2. HTML Forms
+3. Using ejs files
