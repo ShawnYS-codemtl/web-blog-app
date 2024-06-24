@@ -1,0 +1,96 @@
+html {
+    font-size: 16px;
+    height: 100%;
+}
+
+body {
+    font-size: 1rem;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    background-color: #ff7f3e;
+    gap: 50px;
+    height: 50px;
+    justify-content: flex-start;
+    border-color: black;
+    padding: 15px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    margin: 0 0 15px 0;
+}
+
+.title {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    margin-left: 5px;
+}
+
+.content {
+    display: flex;
+    height: 100%;
+}
+
+.navbar {
+    background-color: #fff369;
+    width: auto;
+    height: auto;
+    padding: 15px 25px 10px 10px;
+    margin: 0 0 0 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-section {
+    background-color: #80c4e9;
+    padding-left: 50px;
+    text-align: justify;
+    width: 100%;
+}
+
+.box {
+    background-color: #80c4e9;
+    display : flex;
+    flex-direction: column;
+    text-align:left;
+    width: 100%;
+    font-size: large;
+}
+
+.box input {
+    width: 418px;
+}
+
+hr.solid {
+    border-top: 3px solid #604cc3;
+  }
+
+#title-label {
+    margin-right: 22px;
+}
+
+
+.box div {
+    margin-bottom: 30px;
+
+}
+
+ol{
+    margin-top:0;
+    padding-left: 0;
+    /* border: 1px solid orangered;
+    }
+    
+    li:not(:last-child){
+      border-bottom: 1px solid orangered;
+      */
+    } 
+
+
